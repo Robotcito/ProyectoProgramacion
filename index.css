@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#encabezado {
+    border-radius: 5px;
+    background-color: #0684FF;
+    background-image: url("Recursos/Ilustracion_sin_titulo.png");
+    background-size: cover;
+    /* Para cubrir completamente el div con la imagen */
+    background-position: center;
+    /* Centrar la imagen en el div */
+}
+
+body {
+    margin: 50px;
+    box-sizing: border-box;
+
+    background: #eee;
+    /*background-image: url('recursos/imagenes/catarata.jpg');
+    background-size: cover;*/
+    background-color: linear-gradient(#fff, #888);
+
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-content {
+    float: right;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#fff, #888);
+
+}
+
+aside {
+    margin: 20px;
+    width: 25%;
+    display: flexbox;
+    float: left;
+}
+
+article {
+    padding: 20px;
+    width: 70%;
+    display: flexbox;
+    float: right;
+}
+
+
+footer {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+        color: white;
+
+    }
+    aside{
+        width: 90%;
+    }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(189, 189, 153);
+        color: black;
+    }
+
+    .main-content {
+        width: 100%;
+
+    }
+
+    .main-content aside {
+        width: 250px;
+        display: inline-flexbox;
+    }
+
+    .main-content article {
+        width: fit-content;
+    }
+}

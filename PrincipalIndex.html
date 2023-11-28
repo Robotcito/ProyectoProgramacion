@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="script.js"></script>-->
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>Noticias al momento</title>
+</head>
+
+<body>
+    <header id="encabezado" style="height: 400px;">
+        <!-- Puedes personalizar el header con imágenes y logos -->
+        <img src="Recursos/Logo Noticias.jpg" alt="logo">
+    </header>
+    
+
+
+    <nav>
+        <mi-menu></mi-menu> <!--Con esto solo mando a llamar la barra de Navegacion en todas las paginas -->
+        <!-- Barra de navegación -->
+        <!-- Puedes agregar más elementos de navegación según sea necesario -->
+    </nav>
+
+    <section class="main-content">
+
+        <!-- Contenido principal (noticias) -->
+        <aside>
+            <!-- Puedes agregar contenido adicional relacionado con el tema -->
+            <div class="ratio ratio-16x9" class="img-thumbnail">
+                <iframe class="img-thumbnail" src="https://www.youtube.com/embed/wTMmzI3Ya2Q?si=0t6b7ylZfX6YTtKS"
+                    title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe class="img-thumbnail" src="https://www.youtube.com/embed/l7ztFIZaLJY?si=ycLV2D8ynVDx4wBI"
+                    title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </aside>
+        <article>
+            <h1 style="margin: 20px;">Guerra entre Israel y Gaza, en directo | Hamás libera a un grupo de 24 rehenes
+                e
+                Israel excarcela a 39
+                mujeres y niños palestinos</h1><br>
+            <p>
+                Tras iniciar una tregua entre Israel y Hamás en Gaza este viernes por la mañana después de casi
+                siete semanas de guerra, la milicia islamista y las autoridades israelíes ya han liberado a los
+                primeros rehenes secuestrados desde el 7 de octubre, pasadas las 16.15, hora local (una menos en la
+                España peninsular). Se trata de un grupo de 24 rehenes que estaba en manos de Hamás y de 39 mujeres
+                y niños palestinos encarcelados en territorito israelí. Israel se prepara para excarcelar a cambio a
+                24 mujeres y 15 menores palestinos detenidos. Se cumple así lo acordado para el primer día de la
+                tregua, según han anunciado las autoridades qataríes. En total, el pacto prevé a lo largo de cuatro
+                días un intercambio de 50 rehenes israelíes en manos de las milicias palestinas por 150 mujeres y
+                niños palestinos presos. El acuerdo también contempla la entrada en la Franja de cientos de camiones
+                de ayuda humanitaria. Según la Media Luna Roja, 85 camiones han entrado ya al enclave por el paso de
+                Rafah, que conecta Gaza con Egipto.
+            </p>
+        </article>
+    </section>
+    <footer style="background-color: #0684FF; text-align: center;">
+        <p>
+            © 2023 Noticias. A Noticias. Discovery Company. All Rights Reserved. \<br>
+            Noticias Sans ™ & © 2023 Noticias.
+        </p>
+        <script>
+            // Función para mostrar la fecha actual en el footer
+            function mostrarFecha() {
+                const fechaActual = new Date();
+                const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+                const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+
+                document.write(`<p>Fecha: ${fechaFormateada} </p>`);
+            }
+
+            // Llamar a la función para mostrar la fecha al cargar la página
+            mostrarFecha();
+        </script>
+
+    </footer>
+
+</body>
+
+</html>

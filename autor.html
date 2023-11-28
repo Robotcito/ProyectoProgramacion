@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+
+
+
+    <title>Autor</title>
+</head>
+
+<body>
+
+    <body style="  background-color: linear-gradient(#fff, #888);">
+        <header id="encabezado" style="background-color: #0684FF; height: 500px;">
+            <!-- Puedes personalizar el header con imágenes y logos -->
+            <img src="Recursos/Logo Noticias.jpg" alt="">
+        </header>
+        <mi-menu></mi-menu>
+        <h1>Autores</h1>
+     
+            <p>
+                <div style="display: flexbox;">
+                    <img src="Recursos/ProfilePicture.jpg" alt="Ing. Jhonatan Soto" width="350" height="350">
+                   <br> Jhonatan Soto Cruz <br>
+                    Cedula: 207060704 <br> 
+                    Correo: jonsotoc@yahoo.es
+            <p>
+
+                <div style="display: flexbox;">
+                <img src="Recursos/FotoFranklin.jpg" alt="Ing. Franklin Pulido" width="350" height="350">
+               <br> Franklin Pulido <br>
+                Cedula: 208190821 <br>
+                Correo: 19franklinpulido@gmail.com
+            </p>
+        </div>
+
+
+        <footer style="background-color: #0684FF; text-align: center;">
+            <p>
+                © 2023 Noticias. A Noticias. Discovery Company. All Rights Reserved. \<br>
+                Noticias Sans ™ & © 2023 Noticias.
+            </p>
+            <script>
+                // Función para mostrar la fecha actual en el footer
+                function mostrarFecha() {
+                    const fechaActual = new Date();
+                    const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+
+                    document.write(`<p>Fecha: ${fechaFormateada} </p>`);
+                }
+
+                // Llamar a la función para mostrar la fecha al cargar la página
+                mostrarFecha();
+            </script>
+
+        </footer>
+    </body>
+
+</html>
